@@ -6,6 +6,8 @@ import { faSearch, faPhone, faMapMarker, faClock, faEnvelope } from '@fortawesom
 import { MenuComponent } from './components/MenuComponent'
 import { CarDetailsComponent } from './components/CarDetailsComponent'
 
+const restAPI = "http://localhost:3000/cars/"
+
 library.add({ faSearch, faClock, faMapMarker, faPhone, faEnvelope })
 
 class App extends Component {
@@ -13,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <MenuComponent />
-        <CarDetailsComponent onClick={this.selectImage} carid="1"/>
+        <CarDetailsComponent onClick={this.selectImage} restapi={restAPI} carid="1" />
       </div >
     );
   }

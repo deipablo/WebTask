@@ -96,7 +96,7 @@ class CarDetailsComponent extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/cars/"+this.props.carid)
+    fetch(this.props.restapi + this.props.carid)
       .then(res => res.json())
       .then(
         (result) => {
