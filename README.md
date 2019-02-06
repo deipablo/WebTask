@@ -1,7 +1,7 @@
 # WebTask
 Final Challenge WebTask
 
-Requierments to run the code:
+Requirements to run the code:
 - MongoDB
 - Node.js
 - React.js
